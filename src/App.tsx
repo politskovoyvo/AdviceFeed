@@ -3,12 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import WebApp from '@twa-dev/sdk'
+import { MainButton, SecondaryButton } from '@twa-dev/sdk/react';
 
 function App() {
     const [count, setCount] = useState(0)
 
     const handleClick = () => {
-        WebApp.showAlert('Здарова братан!')
+        // WebApp.close();
+        WebApp.close();
     }
 
     return (
@@ -21,22 +23,24 @@ function App() {
                     <img src={reactLogo} className="logo react" alt="React logo"/>
                 </a>
             </div>
+
             <h1>Vite + React</h1>
+
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
                 </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
             </div>
 
-            <button onClick={handleClick}>
-                Click
-            </button>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+            <MainButton text="Continue" onClick={() => alert('continue')} />
+            <SecondaryButton text="Cancel" position="bottom" onClick={handleClick} />
+
+            {/*<button onClick={() => alert('cancelled')}>*/}
+            {/*    Click*/}
+            {/*</button>*/}
+            {/*<p className="read-the-docs">*/}
+            {/*    Click on the Vite and React logos to learn more*/}
+            {/*</p>*/}
         </>
     )
 }
