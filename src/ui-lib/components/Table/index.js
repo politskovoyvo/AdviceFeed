@@ -1,0 +1,9 @@
+export { UITable } from './Table.js';
+export { useTableContext } from './table-context.js';
+export { UITbody } from './Tbody.js';
+export { UITCustomCard } from './TCustom-card.js';
+export { UITd } from './Td.js';
+export { UITfoot } from './Tfoot.js';
+export { UITh } from './Th.js';
+export { UIThead } from './Thead.js';
+export { UITr } from './Tr.js';

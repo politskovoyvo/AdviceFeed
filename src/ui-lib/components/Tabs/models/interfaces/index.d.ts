@@ -1,0 +1,13 @@
+export type { ITabButtonProps } from './tab-button-props.interface';
+export type { ITabListProps } from './tab-list-props.interface';
+export type { ITabPanelProps } from './tab-panel-props.interface';
+export type { ITabPanelsProps } from './tab-panels-props.interface';
+export type { ITabProps } from './tab-props.interface';
+export type { ITabsProps } from './tabs-props.interface';
+export type { IUseTabOptions } from './use-tab-options.interface';
+export type { IUseTabPanelContext } from './use-tab-panel-context.interface';
+export type { IUseTabPanelProps } from './use-tab-panel-props.interface';
+export type { IUseTabPanelsProps } from './use-tab-panels-props.interface';
+export type { IUseTabProps } from './use-tab-props.interface';
+export type { IUseTabListProps } from './use-tabs-list-props.interface';
+export type { IUseTabsProps } from './use-tabs-props.interface';

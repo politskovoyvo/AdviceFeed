@@ -1,0 +1,1 @@
+export declare function addDomEvent<K extends keyof HTMLElementEventMap>(target: EventTarget, type: K, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): () => void;

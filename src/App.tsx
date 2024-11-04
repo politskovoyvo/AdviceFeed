@@ -1,13 +1,9 @@
-import {useState} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import WebApp from '@twa-dev/sdk'
-import { MainButton, SecondaryButton } from '@twa-dev/sdk/react';
+import {MainButton, SecondaryButton} from '@twa-dev/sdk/react';
+import {UIChat} from "./ui-lib/components/Chat";
 
 function App() {
-    const [count, setCount] = useState(0)
-
     const handleClick = () => {
         // WebApp.close();
         WebApp.close();
@@ -15,25 +11,14 @@ function App() {
 
     return (
         <>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo"/>
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img src={reactLogo} className="logo react" alt="React logo"/>
-                </a>
-            </div>
+            <UIChat
+                messages={[]}
+                sendMethod={(query: string) => Promise.resolve(query)}
+                readOnly={false}
+                className="max-h-[60vh] md:max-h-[50vh]"/>
 
-            <h1>Vite + React</h1>
-
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-            </div>
-
-            <MainButton text="Continue" onClick={() => alert('continue')} />
-            <SecondaryButton text="Cancel" position="bottom" onClick={handleClick} />
+            <MainButton text="Continue" onClick={() => alert('continue')}/>
+            <SecondaryButton text="Cancel" position="bottom" onClick={handleClick}/>
 
             {/*<button onClick={() => alert('cancelled')}>*/}
             {/*    Click*/}

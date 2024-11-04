@@ -1,0 +1,9 @@
+export { UITable } from './Table';
+export { useTableContext } from './table-context';
+export { UITbody } from './Tbody';
+export { UITCustomCard } from './TCustom-card';
+export { UITd } from './Td';
+export { UITfoot } from './Tfoot';
+export { UITh } from './Th';
+export { UIThead } from './Thead';
+export { UITr } from './Tr';

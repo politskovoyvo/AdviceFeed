@@ -1,0 +1,46 @@
+import { DragEndEvent, DragMoveEvent } from '@dnd-kit/core';
+import { CSSProperties } from 'react';
+import { IDrawerProps } from '../Drawer/models';
+import { TUseMobileDrawerComponentProps, TUseMobileDrawerProps } from './models';
+export type TUseMobileDrawerReturn = ReturnType<typeof useMobileDrawer>;
+export declare function useMobileDrawer(props: TUseMobileDrawerProps): {
+    style?: CSSProperties | undefined;
+    open?: (() => void) | undefined;
+    className?: string | undefined;
+    id?: import("../Drawer/models").TDrawerId | undefined;
+    children?: import("react").ReactNode;
+    safe?: boolean | undefined;
+    isOpen: boolean;
+    overlayClosable?: boolean | undefined;
+    overlayExist?: boolean | undefined;
+    outsideClosable?: boolean | undefined;
+    noneStyles?: boolean | undefined;
+    overlayClassName?: string | undefined;
+    afterOpen?: (() => void) | undefined;
+    afterClose?: (() => void) | undefined;
+    sensors: import("@dnd-kit/core").SensorDescriptor<import("@dnd-kit/core").SensorOptions>[];
+    modifiers: import("@dnd-kit/core").Modifier[];
+    handleDragEnd: ({ delta, activatorEvent }: DragEndEvent) => void;
+    draggable: boolean;
+    handleDragMove: ({ delta }: DragMoveEvent) => void;
+    expanded: boolean;
+    expandable: boolean;
+    closable: boolean;
+    close: () => void;
+};
+export declare function useMobileDrawerComponent(props: TUseMobileDrawerComponentProps): {
+    drawerProps: IDrawerProps;
+    attributes: import("@dnd-kit/core").DraggableAttributes;
+    listeners: import("@dnd-kit/core/dist/hooks/utilities").SyntheticListenerMap | undefined;
+    transform: import("@dnd-kit/utilities").Transform | null;
+    isDragging: boolean;
+    setNodeRef: (element: HTMLElement | null) => void;
+    tracker: {
+        padding: number | null;
+        container: number | null;
+    };
+    expanded: boolean;
+    draggable: boolean;
+    observingContainerRef: import("react").RefObject<HTMLDivElement>;
+    containerRef: import("react").RefObject<HTMLDivElement>;
+};

@@ -1,0 +1,9 @@
+import { jsxs, jsx } from 'react/jsx-runtime';
+import { forwardRef } from 'react';
+
+const BuFlagIcon = forwardRef((props, ref) => {
+    return (jsxs("svg", { ref: ref, ...props, width: "1em", height: "1em", viewBox: "0 0 29 20", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [jsx("rect", { x: "0.677246", width: "28", height: "20", rx: "2", fill: "white" }), jsx("mask", { id: "mask0_380_24988", maskUnits: "userSpaceOnUse", x: "0", y: "0", width: "29", height: "20", children: jsx("rect", { x: "0.677246", width: "28", height: "20", rx: "2", fill: "white" }) }), jsxs("g", { mask: "url(#mask0_380_24988)", children: [jsx("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M0.677246 13.3333H28.6772V0H0.677246V13.3333Z", fill: "#E54252" }), jsx("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M0.677246 19.9987H28.6772V13.332H0.677246V19.9987Z", fill: "#5CBE6B" }), jsx("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M0.677246 0H4.67725V3L4.01058 4L4.67725 5V7L4.01058 8L4.67725 9V11L4.01058 12L4.67725 13V15L4.01058 16L4.67725 17V20H0.677246V0Z", fill: "white" }), jsx("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M0.0105795 2L-1.32275 4L0.0105795 6L-1.32275 8L0.0105795 10L-1.32275 12L0.0105795 14L-1.32275 16L0.0105795 18L1.34391 16L0.0105795 14L1.34391 12L0.0105795 10L1.34391 8L0.0105795 6L1.34391 4L0.0105795 2Z", fill: "#E54252" }), jsx("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M1.34375 2L2.67708 0L4.01042 2L2.67708 4L1.34375 2ZM2.67708 8L1.34375 6L2.67708 4L4.01042 6L2.67708 8ZM2.67708 12L1.34375 10L2.67708 8L4.01042 10L2.67708 12ZM2.67708 16L4.01042 14L2.67708 12L1.34375 14L2.67708 16ZM2.67708 16L4.01042 18L2.67708 20L1.34375 18L2.67708 16Z", fill: "#E54252" })] })] }));
+});
+BuFlagIcon.displayName = 'UIBuFlagIcon';
+
+export { BuFlagIcon };

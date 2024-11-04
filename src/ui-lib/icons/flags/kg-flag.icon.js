@@ -1,0 +1,9 @@
+import { jsxs, jsx } from 'react/jsx-runtime';
+import { forwardRef } from 'react';
+
+const KgFlagIcon = forwardRef((props, ref) => {
+    return (jsxs("svg", { ref: ref, ...props, width: "1em", height: "1em", viewBox: "0 0 29 20", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [jsx("rect", { x: "0.354492", width: "28", height: "20", rx: "2", fill: "white" }), jsx("mask", { id: "mask0_380_24547", maskUnits: "userSpaceOnUse", x: "0", y: "0", width: "29", height: "20", children: jsx("rect", { x: "0.354492", width: "28", height: "20", rx: "2", fill: "white" }) }), jsxs("g", { mask: "url(#mask0_380_24547)", children: [jsx("rect", { x: "0.354492", width: "28", height: "20", fill: "#F22A46" }), jsx("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M14.3543 13.3327C16.1953 13.3327 17.6877 11.8403 17.6877 9.99935C17.6877 8.1584 16.1953 6.66602 14.3543 6.66602C12.5134 6.66602 11.021 8.1584 11.021 9.99935C11.021 11.8403 12.5134 13.3327 14.3543 13.3327Z", fill: "#FFF04D" }), jsx("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M12.7225 17.1486L14.3543 14.7127L15.9861 17.1486L16.3995 14.2459L18.9266 15.7325L18.0396 12.938L20.9614 13.1809L18.9498 11.048L21.6877 9.99908L18.9498 8.9502L20.9614 6.81727L18.0396 7.06019L18.9266 4.26565L16.3995 5.75226L15.9861 2.84961L14.3543 5.28547L12.7225 2.84961L12.3092 5.75226L9.78207 4.26565L10.6691 7.06019L7.74722 6.81727L9.7589 8.9502L7.021 9.99908L9.7589 11.048L7.74722 13.1809L10.6691 12.938L9.78207 15.7325L12.3092 14.2459L12.7225 17.1486ZM19.021 9.99908C19.021 12.5764 16.9317 14.6657 14.3543 14.6657C11.777 14.6657 9.68766 12.5764 9.68766 9.99908C9.68766 7.42175 11.777 5.33241 14.3543 5.33241C16.9317 5.33241 19.021 7.42175 19.021 9.99908Z", fill: "#FFF04D" })] })] }));
+});
+KgFlagIcon.displayName = 'UIKgFlagIcon';
+
+export { KgFlagIcon };

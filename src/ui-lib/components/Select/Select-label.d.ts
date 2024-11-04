@@ -1,0 +1,2 @@
+/// <reference types="react" />
+export declare const SelectLabel: import("react").ForwardRefExoticComponent<Required<import("./models").ISelectCommonProps> & Pick<import("./models").TSelectSearchProps, "placeholder" | "insideOverlay"> & import("./models").ISelectValue & import("./models").ISelectCoverageProps & import("react").HTMLAttributes<HTMLDivElement> & import("react").RefAttributes<HTMLDivElement>>;
