@@ -1,7 +1,6 @@
 import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import App from './App'
 import WebApp from '@twa-dev/sdk'
 import {uiConfig} from "./ui-lib/config";
 import {UIProvider} from "./ui-lib/provider";
@@ -9,6 +8,7 @@ import {Link, LinkProps, NavLink, NavLinkProps} from 'react-router-dom';
 import {forwardRef} from 'react';
 import {TFieldValidation} from "./ui-lib/config/models";
 import {InternalFieldErrors} from 'react-hook-form';
+import './index.css'
 
 // Инициализация SDK
 WebApp.ready();
